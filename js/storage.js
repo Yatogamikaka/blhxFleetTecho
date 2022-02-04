@@ -1,5 +1,5 @@
 $(function () {
-    // genJson();
+    genJson();
     $(window).one('load',)
     loadLocalStorage();
     $('tbody').on('change', 'input', function () {
@@ -41,6 +41,10 @@ $(function () {
 
     }
     function genJson() {
+        var data = getLocalStorage('cvBackFill');
+        if (data != null) {
+            return;
+        }
         $.each($('tbody'), function (i, ele) {
             // console.log($(ele).prop('class').substr(6));
             var data = [];
