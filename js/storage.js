@@ -1,6 +1,5 @@
 $(function () {
     genJson();
-    $(window).one('load',)
     loadLocalStorage();
     $('tbody').on('change', 'input', function () {
         var cName = $(this).parents('tbody').prop('class');
