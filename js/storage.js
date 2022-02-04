@@ -43,7 +43,7 @@ $(function () {
     function genJson() {
         var data = getLocalStorage('cvBackFill');
         if (data != null) {
-            return;
+            return null;
         }
         $.each($('tbody'), function (i, ele) {
             // console.log($(ele).prop('class').substr(6));
