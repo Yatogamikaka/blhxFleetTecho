@@ -60,7 +60,4 @@ $(function () {
             saveLocalStorage($(ele).prop('class'), data);
         })
     }
-    function updateJson(obj, index, staue) {
-        obj[index].done = staue;
-    }
 })
