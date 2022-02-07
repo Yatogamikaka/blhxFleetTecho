@@ -15,7 +15,16 @@
             text-align: center;
         }
 
-        td,
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        td {
+            height: 30px;
+            border: 1px solid #333;
+        }
+
         th {
             border: 1px solid #333;
         }
@@ -42,6 +51,15 @@
             height: 30px;
         }
 
+        .switch {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            /* 经典问题：高度100%，文字垂直居中 how？ */
+            line-height: 63px;
+        }
+
         /* .table-box {
             width: 1500px;
             margin: 0 auto;
@@ -51,6 +69,7 @@
     </style>
     <script src="js/jQuery.mini.js"></script>
     <script src="js/storage.js"></script>
+    <script src="js/animate.js"></script>
 </head>
 
 <body>
@@ -63,7 +82,9 @@
                 <tr>
                     <td rowspan="2">名称</td>
                     <td colspan="2">属性加成</td>
-                    <td rowspan="2">是否完成</td>
+                    <td rowspan="2">
+                        <a href="javascript:void(0)" class="switch" title="点击切换显示" id="cvBF">是否完成&lt;&gt;</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>解锁</td>
@@ -83,7 +104,9 @@
                 <tr>
                     <td rowspan="2">名称</td>
                     <td colspan="2">属性加成</td>
-                    <td rowspan="2">是否完成</td>
+                    <td rowspan="2">
+                        <a href="javascript:void(0)" class="switch" title="点击切换显示" id="cvH">是否完成&lt;&gt;</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>解锁</td>
@@ -103,7 +126,9 @@
                 <tr>
                     <td rowspan="2">名称</td>
                     <td colspan="2">属性加成</td>
-                    <td rowspan="2">是否完成</td>
+                    <td rowspan="2">
+                        <a href="javascript:void(0)" class="switch" title="点击切换显示" id="bbBF">是否完成&lt;&gt;</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>解锁</td>
@@ -123,7 +148,9 @@
                 <tr>
                     <td rowspan="2">名称</td>
                     <td colspan="2">属性加成</td>
-                    <td rowspan="2">是否完成</td>
+                    <td rowspan="2">
+                        <a href="javascript:void(0)" class="switch" title="点击切换显示" id="bbH">是否完成&lt;&gt;</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>解锁</td>
