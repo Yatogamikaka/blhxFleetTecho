@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    float: left;
+    width: 320px;
+    margin: 0 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+td {
+    height: 30px;
+    border: 1px solid #333;
+}
+
+th {
+    border: 1px solid #333;
+}
+
+thead tr {
+    height: 30px;
+    background-color: #ccc;
+}
+
+input {
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+}
+
+.table-box {
+    overflow: hidden;
+}
+
+.input {
+    height: 30px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#uploadFiles {
+    width: 200px;
+    height: 30px;
+}
+
+.switch {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* 经典问题：高度100%，文字垂直居中 how？ */
+    line-height: 63px;
+}
+
+.tab {
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+    z-index: 2;
+}
+
+.tab ul li {
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#displatC {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+.font:hover {
+    color: #1296db;
+}
+
+.font {
+    font-size: 48px;
+    color: #8a8a8a;
+}
+
+.echarts {
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 300px);
+    width: 640px;
+    height: 440px;
+    border: #ccc;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 1px 1px rgba(0,0,0,.3);
+    z-index: 9;
+    display: none;
+}
+
+.barChart {
+    width: 600px;
+    height: 400px;
+    margin: 20px;
+}
+
+.echarts a {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    top: -15px;
+    right: -15px;
+    font-size: 17px;
+    text-align: center;
+    color: #515151;
+    background-color: #fff;
+}
+.mask {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(204,204,204,.5);
+    display: none;
+}

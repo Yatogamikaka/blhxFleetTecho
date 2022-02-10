@@ -5,71 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>碧蓝航线装填、命中属性点查漏补缺</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./font/iconfont.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/jQuery.mini.js"></script>
+    <script src="./js/storage.js"></script>
+    <script src="./js/animate.js"></script>
     <style>
-        table {
-            float: left;
-            width: 320px;
-            margin: 0 20px;
-            border-collapse: collapse;
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-
-        td {
-            height: 30px;
-            border: 1px solid #333;
-        }
-
-        th {
-            border: 1px solid #333;
-        }
-
-        thead tr {
-            height: 30px;
-            background-color: #ccc;
-        }
-
-        input {
-            width: 100%;
-            height: 20px;
-            cursor: pointer;
-        }
-
-        .input {
-            height: 30px;
-            margin: 10px 0;
-            text-align: center;
-        }
-
-        #uploadFiles {
-            width: 200px;
-            height: 30px;
-        }
-
-        .switch {
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            /* 经典问题：高度100%，文字垂直居中 how？ */
-            line-height: 63px;
-        }
-
-        /* .table-box {
-            width: 1500px;
-            margin: 0 auto;
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
             overflow: hidden;
-            text-align: center;
-        } */
+        }
     </style>
-    <script src="js/jQuery.mini.js"></script>
-    <script src="js/storage.js"></script>
-    <script src="js/animate.js"></script>
 </head>
 
 <body>
@@ -162,7 +113,26 @@
             </tbody>
         </table>
     </div>
-    <script src="js/index.js"></script>
+    <div class="chart-box">
+        <div class="tab">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" id="displatC" title="统计">
+                        <svg class="icon font" aria-hidden="true">
+                            <use xlink:href="#icon-tubiao"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="echarts">
+            <div class="barChart"></div>
+            <a href="javascript:void(0)">x</a>
+        </div>
+
+    </div>
+    <div class="mask"></div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
