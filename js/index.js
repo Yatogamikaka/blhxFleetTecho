@@ -309,6 +309,17 @@ var file = {
                 "isLightOnly": false,
                 "point": 0
             }
+        },
+        {
+            "name": "伏尔加",
+            "unlock": {
+                "isLightOnly": false,
+                "point": 0
+            },
+            "completed": {
+                "isLightOnly": false,
+                "point": 1
+            }
         }
     ],
     "bbBackFill": [
@@ -443,6 +454,17 @@ var file = {
                 "isLightOnly": false,
                 "point": 2
             }
+        },
+        {
+            "name": "乌尔里希·冯·胡滕",
+            "unlock": {
+                "isLightOnly": false,
+                "point": 0
+            },
+            "completed": {
+                "isLightOnly": false,
+                "point": 1
+            }
         }
     ],
     "bbHit": [
@@ -543,6 +565,17 @@ var file = {
             "completed": {
                 "isLightOnly": false,
                 "point": 2
+            }
+        },
+        {
+            "name": "前卫",
+            "unlock": {
+                "isLightOnly": false,
+                "point": 0
+            },
+            "completed": {
+                "isLightOnly": false,
+                "point": 1
             }
         }
     ]
